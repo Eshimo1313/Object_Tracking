@@ -1,6 +1,13 @@
 services:
   app:
     build: .
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+     
     ports:
       - 4000:4000
     volumes:

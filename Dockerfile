@@ -7,6 +7,6 @@ COPY . .
 RUN apt update && apt dist-upgrade -y
 RUN apt install ffmpeg -y
 RUN pip install -U wheel
-RUN pip install -U ipykernel numpy ultralytics
+RUN pip install -U ipykernel numpy opencv-contrib-python pillow matplotlib
 
 ENTRYPOINT [ "top","-b" ]
